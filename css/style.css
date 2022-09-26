@@ -1,0 +1,114 @@
+/* переважний колір сторінки */
+.body {
+    color: var(--primary-text-color);
+}
+ul{list-style: none;}
+/*колір основного тексту #757575;*/
+/*колір другорядного тексту #212121;*/
+/*колір логотипу #000000;*/
+/*колір навігації при ховері #2196F3;*/
+/*колір тексту героя та лого футер #FFFFFF;*/
+/*колір фону наша команда  та кнопок у портфоліо #F5F4FA;*/
+/*колір фону героя та футера #2F303A;*/
+/*колір фону портфоліо #EEEEEE;*/
+:root{
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --logo-text-color:#000000;
+    --accent-color:#2196F3;
+    --hero-footer-text-color:#FFFFFF;
+    --hero-footer-background-color:#2F303A;
+    --portfolio-background-color:#EEEEEE;
+    --our-command-background-button-portfolio-color:#F5F4FA;
+    --logo-hover-color:#ff2145;
+    --contact-footer-text-color:#ffffff60;
+
+
+}
+/* web color */
+.startlogo {
+    color:var(--accent-color);
+}
+.startlogo:hover{
+    color: var(--accent-color);
+}
+/* logo color */
+.logo {
+color:var(--logo-text-color);
+}
+.logo:hover{
+    color:var(--accent-color)
+}
+/* navigation color */
+.site-nav .link {
+color:var(--title-text-color);
+cursor: pointer;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color:var(--accent-color);
+}
+/* contact color */
+.contact .link{
+    color:var(--primary-text-color);
+    cursor: pointer;
+}
+.contact .link:hover,
+.contact .link:focus{
+    color:var(--accent-color)
+}
+/* hero color */
+.hero-title{
+    color:var(--hero-footer-text-color);
+    background-color:var(--hero-background-color);
+}
+.button{
+    color: var(--hero-footer-text-color);
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+    cursor: pointer;
+}
+
+
+/* section color */
+.section-title{
+    color:var(--title-text-color);  
+}
+/* preferences color */
+.preferences-list .title{
+    color:var(--title-text-color)
+}
+.command>.section-title{
+    color: var(--title-text-color);
+    background-color:var(---command-background-buourtton-portfolio-color);
+    }
+.title{
+    color: var(--title-text-color);
+}    
+.logo-footer{
+    color:var(--hero-footer-text-color);
+}
+.logo-footer:hover,
+.logo-footer:focus{
+    color:var(--accent-color);
+}
+.footer{
+    background-color:var(--hero-footer-background-color);
+}    
+.location{
+    font-style: normal
+}
+.map{
+    color:var(--hero-footer-text-color);
+}
+.map:hover,
+.map:focus{
+    color: var(--accent-color);
+}
+.kontakt{
+    color: var(--contact-footer-text-color);
+    }
+.kontakt:hover,
+.kontakt:focus{
+    color: var(--accent-color);
+}
