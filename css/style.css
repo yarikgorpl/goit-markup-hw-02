@@ -1,114 +1,137 @@
 /* переважний колір сторінки */
-.body {
-    color: var(--primary-text-color);
-}
-ul{list-style: none;}
 /*колір основного тексту #757575;*/
-/*колір другорядного тексту #212121;*/
+/*колір  тексту заголовків та кнопок #212121;*/
 /*колір логотипу #000000;*/
 /*колір навігації при ховері #2196F3;*/
 /*колір тексту героя та лого футер #FFFFFF;*/
 /*колір фону наша команда  та кнопок у портфоліо #F5F4FA;*/
 /*колір фону героя та футера #2F303A;*/
 /*колір фону портфоліо #EEEEEE;*/
-:root{
-    --primary-text-color:#757575;
-    --title-text-color:#212121;
-    --logo-text-color:#000000;
-    --accent-color:#2196F3;
-    --hero-footer-text-color:#FFFFFF;
-    --hero-footer-background-color:#2F303A;
-    --portfolio-background-color:#EEEEEE;
-    --our-command-background-button-portfolio-color:#F5F4FA;
-    --logo-hover-color:#ff2145;
-    --contact-footer-text-color:#ffffff60;
-
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --logo-text-color: #000000;
+    --accent-color: #2196F3;
+    --hero-footer-text-color: #FFFFFF;
+    --hero-footer-background-color: #2F303A;
+    --portfolio-background-color: #EEEEEE;
+    --our-command-background-button-portfolio-color: #F5F4FA;
+    --logo-hover-color: #ff2145;
+    --contact-footer-text-color: #ffffff60;
 
 }
+body {
+    color: var(--primary-text-color);
+}
+ul{list-style: none;}
+
 /* web color */
 .startlogo {
-    color:var(--accent-color);
-}
-.startlogo:hover{
     color: var(--accent-color);
 }
 /* logo color */
 .logo {
-color:var(--logo-text-color);
+color: var(--logo-text-color);
+text-decoration: none;
 }
 .logo:hover{
-    color:var(--accent-color)
+    color: var(--accent-color)
 }
 /* navigation color */
 .site-nav .link {
-color:var(--title-text-color);
+color: var(--title-text-color);
 cursor: pointer;
+text-decoration: none;
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
-    color:var(--accent-color);
-}
+.site-nav .link:focus { 
+       color: var(--accent-color);}
+.site-nav .link.current
+{color: var(--accent-color);}
+
 /* contact color */
 .contact .link{
-    color:var(--primary-text-color);
+    color: var(--primary-text-color);
     cursor: pointer;
+    text-decoration: none;
 }
 .contact .link:hover,
 .contact .link:focus{
-    color:var(--accent-color)
+    color: var(--accent-color);
 }
 /* hero color */
 .hero-title{
-    color:var(--hero-footer-text-color);
+    color: var(--hero-footer-text-color);
     background-color:var(--hero-background-color);
 }
-.button{
+.button-hero{
     color: var(--hero-footer-text-color);
     background-color: var(--accent-color);
     border: var(--accent-color);
     cursor: pointer;
 }
+.button-list .view{
+    background- color: var(--our-command-background-button-portfolio-color);
+    color: var(--title-text-color);
+    border: var(--title-text-color);
+    cursor: pointer;
+}
 
-
+.button-list .view-current{
+    color: var(--hero-footer-text-color);
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+    cursor: pointer;
+    }
+   
 /* section color */
 .section-title{
-    color:var(--title-text-color);  
+    color: var(--title-text-color);  
+}
+.aps-list .list{text-decoration: none;}
+.aps{
+    color:var(--primary-text-color);
 }
 /* preferences color */
 .preferences-list .title{
-    color:var(--title-text-color)
+    color: var(--title-text-color);
 }
 .command>.section-title{
     color: var(--title-text-color);
-    background-color:var(---command-background-buourtton-portfolio-color);
+    background-color: var(--our-command-background-button-portfolio-color);
     }
 .title{
     color: var(--title-text-color);
-}    
+    }  
+    
 .logo-footer{
-    color:var(--hero-footer-text-color);
+    color: var(--hero-footer-text-color);
+    text-decoration: none;
 }
+
 .logo-footer:hover,
-.logo-footer:focus{
-    color:var(--accent-color);
+.logo-footer:focus {
+    color:v ar(--accent-color);
 }
 .footer{
-    background-color:var(--hero-footer-background-color);
+    background-color: var(--hero-footer-background-color);
 }    
 .location{
-    font-style: normal
+    font-style:normal;
 }
 .map{
-    color:var(--hero-footer-text-color);
+    color: var(--hero-footer-text-color);
+    text-decoration: none;
 }
 .map:hover,
-.map:focus{
+.map:focus {
     color: var(--accent-color);
 }
 .kontakt{
     color: var(--contact-footer-text-color);
+    text-decoration: none;
     }
 .kontakt:hover,
-.kontakt:focus{
+.kontakt:focus {
     color: var(--accent-color);
 }
