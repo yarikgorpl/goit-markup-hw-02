@@ -194,14 +194,12 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;}
 .example-description {
-    color: var(--primary-text-color) font-size: 16px;
+    color: var(--primary-text-color); 
+    font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;}
-.example-link:hover,
-.example-link:focus {
-    color: var(--accent-color);
-}
-
-.example-link {
-    text-decoration: none;
-}
+.example .example-link {
+    text-decoration: none;}
+.example .example-link :hover,
+.example .example-link :focus
+{color:var(--accent-color);}
