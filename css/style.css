@@ -148,7 +148,7 @@ ul {
 .hero-button:hover,
 .hero-button:focus {
   color: var(--hero-footer-text-color);
-  background-color: var(--hero-batton-active);
+  background-color: var(--hero-button-active);
 }
 /* Стилізація секції наші переваги */
 .visually-hidden {
