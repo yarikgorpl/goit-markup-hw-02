@@ -7,6 +7,15 @@
 /*колір фону наша команда  та кнопок у портфоліо #F5F4FA;*/
 /*колір фону героя та футера #2F303A;*/
 /*колір фону портфоліо #EEEEEE;*/
+hnml {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -28,10 +37,14 @@ body {
 }
 ul {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
+
 /*Стилізація хедеру  */
 /*  Стилізація логотипу*/
 .logo {
+  display: inline-block;
   color: var(--logo-text-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -39,6 +52,8 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 .startlogo {
   color: var(--accent-color);
@@ -84,6 +99,7 @@ ul {
   background-color: var(--hero-footer-background-color);
 }
 .footer-logo {
+  display: inline-block;
   color: var(--hero-footer-text-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -91,20 +107,26 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 .footer-logo:hover,
 .footer-logo:focus {
   color: var(--accent-color);
 }
 .location-map {
+  display: inline-block;
   color: var(--hero-footer-text-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-bottom: 9px;
 }
-.location-contact {
+.location-mail,
+.location-phone {
+  display: inline-block;
   color: var(--contact-footer-text-color);
   font-style: normal;
   font-size: 14px;
@@ -112,19 +134,33 @@ ul {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+.location-mail {
+  margin-bottom: 9px;
+}
+.location-phone {
+  padding-bottom: 60px;
+}
 .location-map:hover,
 .location-map:focus {
   color: var(--accent-color);
 }
-.location-contact:hover,
-.location-contact:focus {
+.location-mail:hover,
+.location-mail:focus {
   color: var(--accent-color);
 }
+.location-phone:hover,
+.location-phone:focus {
+  color: var(--accent-color);
+}
+
 /* Стилізація героя */
 .hero {
   background-color: var(--hero-footer-background-color);
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--hero-footer-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -132,6 +168,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 200px;
 }
 .hero-button {
   color: var(--hero-footer-text-color);
@@ -141,10 +178,11 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  border: none;
+  border: transparent;
   border-radius: 4px;
-  text-align: center;
+  margin-bottom: 200px;
   cursor: pointer;
+  padding: 10px 32px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -164,6 +202,14 @@ ul {
   clip-path: inset(50%);
   margin: -1px;
 }
+.container {
+  outline: solid 2px red;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1170px;
+  padding: 0px 15px 0px 15px;
+}
 .section-list .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -171,11 +217,18 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 94px;
+  margin-bottom: 10px;
 }
 .section-list .text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 94px;
 }
 /* Стилізація секції чим ми займаємось */
 .section-work {
@@ -185,10 +238,18 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.section-image {
+  padding-bottom: 94px;
 }
 /* Стилізація секції співробітники */
 .command {
   background-color: var(--our-command-background-button-portfolio-color);
+}
+.command-list {
+  padding-bottom: 94px;
 }
 .command .description {
   background-color: var(--hero-footer-text-color);
@@ -200,18 +261,32 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-top: 94px;
 }
-.command-list .subtitle {
+.command-image {
+  margin-bottom: 30px;
+}
+.command-subtitle {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
-.command-list .text {
+.command-text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+}
+.section-button {
+  padding-top: 94px;
 }
 /* Стилізація кнопок в портфоліо */
 .btn {
@@ -226,6 +301,8 @@ ul {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-bottom: 50px;
+  padding: 6px 22px;
 }
 .btn.current {
   color: var(--hero-footer-text-color);
@@ -237,6 +314,7 @@ ul {
   text-align: center;
   border: var(--accent-color);
   cursor: pointer;
+  padding: 6px 25px;
 }
 .btn:hover,
 .btn:focus {
@@ -244,18 +322,30 @@ ul {
   background-color: var(--accent-color);
 }
 /* Стилізація списку прикладів робіт */
+.example {
+  padding-bottom: 94px;
+}
+.example-image {
+  display: inline-block;
+  margin-bottom: 20px;
+}
 .example-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
 .example-description {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 20px;
 }
 .example .example-link {
   text-decoration: none;
