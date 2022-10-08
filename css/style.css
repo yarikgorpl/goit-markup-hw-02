@@ -28,6 +28,7 @@ hnml {
   --contact-footer-text-color: #ffffff60;
   --header-color: #ececec;
   --hero-button-active: #188ce8;
+  --card-set-gap: 30px;
 }
 /* Стиль переважного тексту */
 body {
@@ -250,6 +251,7 @@ ul {
   flex-wrap: wrap;
   gap: 30px;
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-list .title {
   color: var(--title-text-color);
@@ -268,18 +270,9 @@ ul {
   letter-spacing: 0.03em;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 94px;
   max-width: 270px;
 }
-.section-list .text-short {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 118px;
-  max-width: 270px;
-}
+
 /* Стилізація секції чим ми займаємось */
 
 .section-work {
@@ -294,12 +287,20 @@ ul {
   margin-bottom: 50px;
   justify-content: center;
 }
-
 .section-image {
   display: flex;
-  gap: 30px;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
   padding-bottom: 94px;
-  justify-content: space-between;
+}
+.section-image-card {
+  width: calc(100% / 3 - var(--card-set-gap));
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+}
+.section-image-view {
+  display: block;
+  max-width: 100%;
 }
 /* Стилізація секції співробітники */
 .command {
@@ -307,9 +308,19 @@ ul {
 }
 .command-list {
   display: flex;
-  justify-content: space-between;
-  gap:30px  
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
   padding-bottom: 94px;
+}
+
+.command-item {
+  width: calc(100% / 4 - var(--card-set-gap));
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+}
+.comand-image {
+  display: block;
+  max-width: 100%;
 }
 .description {
   display: flex;
@@ -318,8 +329,6 @@ ul {
   background-color: var(--hero-footer-text-color);
   padding-top: 30px;
   padding-bottom: 30px;
-  
-  ;
 }
 .command .title {
   display: flex;
@@ -354,8 +363,11 @@ ul {
 .section-button {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 8px;
   padding-top: 94px;
+  margin-bottom: 34px;
+  padding-bottom: 16px;
 }
 /* Стилізація кнопок в портфоліо */
 .btn {
@@ -370,7 +382,6 @@ ul {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 50px;
   padding: 6px 22px;
 }
 .btn.current {
@@ -391,24 +402,28 @@ ul {
   background-color: var(--accent-color);
 }
 /* Стилізація списку прикладів робіт */
-.example {
+.card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
   padding-bottom: 94px;
 }
-.example-border{
-border: 1px solid var(--portfolio-background-color);
-border-top: none;
-padding: 20px 24px;
+.card-item {
+  width: calc(100% / 3 - var(--card-set-gap));
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
 }
-.example-image {
+.card-description {
+  border: 1px solid var(--portfolio-background-color);
+  border-top: none;
+  padding: 20px 24px;
+}
+.card-image {
   display: block;
-  /* margin-bottom: 20px; */
-  
-    }
-.example-title {
+  max-width: 100%;
+}
+.card-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -417,18 +432,18 @@ padding: 20px 24px;
   margin-top: 0px;
   margin-bottom: 4px;
 }
-.example-description {
+.card-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   margin-bottom: 0px;
   margin-top: 0px;
- }
-.example .example-link {
+}
+.card .card-link {
   text-decoration: none;
 }
-.example .example-link :hover,
-.example .example-link :focus {
+.card .card-link :hover,
+.card .card-link :focus {
   color: var(--accent-color);
 }
