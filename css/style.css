@@ -281,10 +281,7 @@ ul {
   max-width: 270px;
 }
 /* Стилізація секції чим ми займаємось */
-.container-list {
-  display: flex;
-  gap: 30px;
-}
+
 .section-work {
   display: flex;
   color: var(--title-text-color);
@@ -299,24 +296,34 @@ ul {
 }
 
 .section-image {
+  display: flex;
+  gap: 30px;
   padding-bottom: 94px;
+  justify-content: space-between;
 }
 /* Стилізація секції співробітники */
 .command {
   background-color: var(--our-command-background-button-portfolio-color);
 }
-.comand-container-list {
-  display: flex;
-  flex-basis: calc((100%-120px)) / 4;
-  justify-content: space-between;
-}
 .command-list {
+  display: flex;
+  justify-content: space-between;
+  gap:30px  
   padding-bottom: 94px;
 }
-.command .description {
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--hero-footer-text-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+  ;
 }
 .command .title {
+  display: flex;
+  justify-content: center;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -326,9 +333,6 @@ ul {
   margin-top: 0px;
   margin-bottom: 50px;
   padding-top: 94px;
-}
-.command-image {
-  margin-bottom: 30px;
 }
 .command-subtitle {
   color: var(--title-text-color);
@@ -345,9 +349,12 @@ ul {
   letter-spacing: 0.03em;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 .section-button {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
   padding-top: 94px;
 }
 /* Стилізація кнопок в портфоліо */
@@ -385,12 +392,22 @@ ul {
 }
 /* Стилізація списку прикладів робіт */
 .example {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
   padding-bottom: 94px;
 }
-.example-image {
-  display: inline-block;
-  margin-bottom: 20px;
+.example-border{
+border: 1px solid var(--portfolio-background-color);
+border-top: none;
+padding: 20px 24px;
 }
+.example-image {
+  display: block;
+  /* margin-bottom: 20px; */
+  
+    }
 .example-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -407,8 +424,7 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 0px;
   margin-top: 0px;
-  padding-bottom: 20px;
-}
+ }
 .example .example-link {
   text-decoration: none;
 }

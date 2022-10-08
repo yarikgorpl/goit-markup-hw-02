@@ -19,27 +19,26 @@
   </head>
   <body>
     <!--шапка сторінки-->
-    <header>
+    <header class="header">
       <!--навігація на інші сторінки-->
-      <nav>
-        <div class="container">
-          <a href="./index.html" class="logo"><span class="startlogo">Web</span>Studio</a>
-
-          <ul class="site-nav">
-            <li><a href="./index.html" class="link-current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
+      <div class="container">
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="./index.html" class="logo"><span class="startlogo">Web</span>Studio</a>
+            <ul class="site-nav">
+              <li><a href="./index.html" class="link-current">Студія</a></li>
+              <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+              <li><a href="" class="link">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="contact-up">
+            <li>
+              <a href="mailto:info@devstudio.com" class="contact-up-link">info@devstudio.com</a>
+            </li>
+            <li><a href="tel:+380961111111" class="contact-up-link">+38 096 111 11 11</a></li>
           </ul>
         </div>
-      </nav>
-      <ul class="contact-up">
-        <div class="container">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact-up-link">info@devstudio.com</a>
-          </li>
-          <li><a href="tel:+380961111111" class="contact-up-link">+38 096 111 11 11</a></li>
-        </div>
-      </ul>
+      </div>
     </header>
     <!--унікальний зміст сторінки-->
     <main>
@@ -68,12 +67,14 @@
               <a href="" class="example-link">
                 <img
                   class="example-image"
-                  src="./image/website.jpg"
-                  alt="Фото співробітників на екрані"
+                  src="./image/peoples.jpg"
+                  alt="Зображення людей на екрані ноутбука"
                   width="370"
                 />
-                <h2 class="example-title">Технокряк</h2>
-                <p class="example-description">Веб-сайт</p>
+                <div class="example-border">
+                  <h2 class="example-title">Технокряк</h2>
+                  <p class="example-description">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li>
@@ -84,10 +85,12 @@
                   alt="Баскетболісти"
                   width="370"
                 />
-                <h2 class="example-title">
-                  Постер <span lang="en">New Orlean vs Golden Star</span>
-                </h2>
-                <p class="example-description">Дизайн</p>
+                <div class="example-border">
+                  <h2 class="example-title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="example-description">Дизайн</p>
+                </div>
               </a>
             </li>
             <li>
@@ -98,8 +101,10 @@
                   alt="Назва ресторану"
                   width="370"
                 />
-                <h2 class="example-title">Ресторан <span lang="en">Seafood</span></h2>
-                <p class="example-description">Додаток</p>
+                <div class="example-border">
+                  <h2 class="example-title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="example-description">Додаток</p>
+                </div>
               </a>
             </li>
             <li>
@@ -110,22 +115,28 @@
                   alt="Навушники"
                   width="370"
                 />
-                <h2 class="example-title">Проєкт <span lang="en">Prime</span></h2>
-                <p class="example-description">Маркетинг</p>
+                <div class="example-border">
+                  <h2 class="example-title">Проєкт <span lang="en">Prime</span></h2>
+                  <p class="example-description">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="" class="example-link">
                 <img class="example-image" src="./image/boxes.jpg" alt="Дві коробки" width="370" />
-                <h2 class="example-title">Проєкт <span lang="en">Boxes</span></h2>
-                <p class="example-description">Додаток</p>
+                <div class="example-border">
+                  <h2 class="example-title">Проєкт <span lang="en">Boxes</span></h2>
+                  <p class="example-description">Додаток</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="" class="example-link">
                 <img class="example-image" src="./image/website2.jpg" alt="Монітор" width="370" />
-                <h2 class="example-title"><span lang="en">Inspiration has no Borders</span></h2>
-                <p class="example-description">Веб-сайт</p>
+                <div class="example-border">
+                  <h2 class="example-title"><span lang="en">Inspiration has no Borders</span></h2>
+                  <p class="example-description">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li>
@@ -136,15 +147,19 @@
                   alt="Журнал"
                   width="370"
                 />
-                <h2 class="example-title">Видання <span lang="en">Limited Edition</span></h2>
-                <p class="example-description">Дизайн</p>
+                <div class="example-border">
+                  <h2 class="example-title">Видання <span lang="en">Limited Edition</span></h2>
+                  <p class="example-description">Дизайн</p>
+                </div>
               </a>
             </li>
             <li>
               <a href="" class="example-link">
                 <img class="example-image" src="./image/project-lab.jpg" alt="Лейбл" width="370" />
-                <h2 class="example-title">Проєкт <span lang="en">LAB</span></h2>
-                <p class="example-description">Маркетинг</p>
+                <div class="example-border">
+                  <h2 class="example-title">Проєкт <span lang="en">LAB</span></h2>
+                  <p class="example-description">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li>
@@ -155,8 +170,10 @@
                   alt="Руки на ноутбуці"
                   width="370"
                 />
-                <h2 class="example-title"><span lang="en">Growing Business</span></h2>
-                <p class="example-description">Додаток</p>
+                <div class="example-border">
+                  <h2 class="example-title"><span lang="en">Growing Business</span></h2>
+                  <p class="example-description">Додаток</p>
+                </div>
               </a>
             </li>
           </ul>
