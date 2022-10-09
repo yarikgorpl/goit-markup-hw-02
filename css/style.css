@@ -67,7 +67,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-bottom: 25px;
+  padding-bottom: 24px;
   padding-top: 24px;
 }
 .startlogo {
@@ -78,25 +78,27 @@ ul {
   color: var(--accent-color);
 }
 .site-nav .link {
+  display: block;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding: 32px 0px;
 }
 .site-nav .link-current {
+  display: block;
   color: var(--accent-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding: 32px 0px;
 }
 .site-nav {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   gap: 50px;
   justify-content: start;
 }
@@ -107,16 +109,17 @@ ul {
 .contact-up {
   display: flex;
   align-items: center;
-  padding: 32px 0px 32px 344px;
+  margin-left: 344px;
   gap: 50px;
 }
 .contact-up-link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14x;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding: 32px 0px;
 }
 .contact-up-link:hover,
 .contact-up-link:focus {
@@ -125,6 +128,7 @@ ul {
 /*Стилізація футеру  */
 .footer {
   background-color: var(--hero-footer-background-color);
+  padding: 60px 0px;
 }
 .footer-logo {
   display: inline-block;
@@ -135,12 +139,14 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 .footer-logo:hover,
 .footer-logo:focus {
   color: var(--accent-color);
+}
+.location-list:not(:last-child) {
+  margin-bottom: 9px;
 }
 .location-map {
   display: inline-block;
@@ -150,23 +156,16 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-bottom: 9px;
 }
 .location-mail,
 .location-phone {
-  display: inline-block;
+  display: block;
   color: var(--contact-footer-text-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
-.location-mail {
-  margin-bottom: 9px;
-}
-.location-phone {
-  padding-bottom: 60px;
 }
 .location-map:hover,
 .location-map:focus {
@@ -182,14 +181,15 @@ ul {
 }
 
 /* Стилізація героя */
+
 .hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .hero {
   background-color: var(--hero-footer-background-color);
+  padding: 200px 0px;
 }
 .hero-title {
   margin-top: 0;
@@ -201,8 +201,6 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 200px;
-  margin-bottom: 30px;
   max-width: 696px;
 }
 .hero-button {
@@ -218,7 +216,6 @@ ul {
   cursor: pointer;
   padding: 10px 32px;
   max-width: 216px;
-  margin-bottom: 200px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -250,8 +247,9 @@ ul {
   justify-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+}
+.section-list-description {
+  padding: 94px 0px;
 }
 .section-list .title {
   color: var(--title-text-color);
@@ -291,13 +289,14 @@ ul {
   display: flex;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
-  padding-bottom: 94px;
 }
 .section-image-card {
   width: calc(100% / 3 - var(--card-set-gap));
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
+  padding-bottom: 94px;
 }
+
 .section-image-view {
   display: block;
   max-width: 100%;
@@ -305,12 +304,12 @@ ul {
 /* Стилізація секції співробітники */
 .command {
   background-color: var(--our-command-background-button-portfolio-color);
+  padding: 94px 0px;
 }
 .command-list {
   display: flex;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
-  padding-bottom: 94px;
 }
 
 .command-item {
@@ -341,7 +340,6 @@ ul {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 .command-subtitle {
   color: var(--title-text-color);
@@ -358,16 +356,16 @@ ul {
   letter-spacing: 0.03em;
   margin-top: 0px;
   margin-bottom: 0px;
-  /* padding-bottom: 30px; */
 }
-.section-button {
+/* Portfolio */
+.example {
+  padding: 94px 0px;
+}
+.example-button {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
-  padding-top: 94px;
-  margin-bottom: 34px;
-  padding-bottom: 16px;
 }
 /* Стилізація кнопок в портфоліо */
 .btn {
@@ -383,6 +381,7 @@ ul {
   border-radius: 4px;
   cursor: pointer;
   padding: 6px 22px;
+  margin-bottom: 50px;
 }
 .btn.current {
   color: var(--hero-footer-text-color);
@@ -394,7 +393,8 @@ ul {
   text-align: center;
   border: var(--accent-color);
   cursor: pointer;
-  padding: 6px 25px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 25%), 0 4px 4px rgba(0, 0, 0, 25%),
+    0 4px 4px rgba(0, 0, 0, 25%);
 }
 .btn:hover,
 .btn:focus {
@@ -407,7 +407,6 @@ ul {
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
-  padding-bottom: 94px;
 }
 .card-item {
   width: calc(100% / 3 - var(--card-set-gap));
