@@ -113,6 +113,7 @@ ul {
   gap: 50px;
 }
 .contact-up-link {
+  display: flex;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -236,22 +237,21 @@ ul {
   margin: -1px;
 }
 .container {
-  outline: solid 2px red;
   margin-left: auto;
   margin-right: auto;
   width: 1170px;
   padding: 0px 15px 0px 15px;
 }
-.section-list {
+.preference {
+  padding: 94px 0px;
+}
+.preference-list {
   display: flex;
   justify-items: center;
   flex-wrap: wrap;
   gap: 30px;
 }
-.section-list-description {
-  padding: 94px 0px;
-}
-.section-list .title {
+.preference-list .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -262,7 +262,7 @@ ul {
   margin-bottom: 0px;
   margin-bottom: 10px;
 }
-.section-list .text {
+.preference-list .text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -272,7 +272,9 @@ ul {
 }
 
 /* Стилізація секції чим ми займаємось */
-
+.section {
+  padding-bottom: 94px;
+}
 .section-work {
   display: flex;
   color: var(--title-text-color);
@@ -294,9 +296,7 @@ ul {
   width: calc(100% / 3 - var(--card-set-gap));
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
-  padding-bottom: 94px;
 }
-
 .section-image-view {
   display: block;
   max-width: 100%;
@@ -366,6 +366,7 @@ ul {
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
+  margin-bottom: 50px;
 }
 /* Стилізація кнопок в портфоліо */
 .btn {
@@ -381,25 +382,18 @@ ul {
   border-radius: 4px;
   cursor: pointer;
   padding: 6px 22px;
-  margin-bottom: 50px;
 }
 .btn.current {
   color: var(--hero-footer-text-color);
   background-color: var(--accent-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  text-align: center;
-  border: var(--accent-color);
-  cursor: pointer;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 25%), 0 4px 4px rgba(0, 0, 0, 25%),
-    0 4px 4px rgba(0, 0, 0, 25%);
+  border: none;
 }
 .btn:hover,
 .btn:focus {
   color: var(--hero-footer-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 25%), 0 4px 4px rgba(0, 0, 0, 25%),
+    0 4px 4px rgba(0, 0, 0, 25%);
 }
 /* Стилізація списку прикладів робіт */
 .card {
